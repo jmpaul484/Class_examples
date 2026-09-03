@@ -10,6 +10,10 @@ namespace classExamplesControlFlow
         {
             int firstNumber = 7;
             string userInput = "";
+            string userPrompt = "Please choose One of:\n" +
+                                "1.  maybe\n" + 
+                                "2.  maybe not\n" + 
+                                "3.  maybe so\n";
             //if (firstNumber < 1)
             //{
             //    Console.WriteLine("bigger then 1!");
@@ -32,7 +36,7 @@ namespace classExamplesControlFlow
             //}
             //Pause
 
-            Console.WriteLine("choose wisely 1, 2, or 3");
+            Console.WriteLine(userPrompt);
             userInput = Console.ReadLine();
 
             if (userInput == "1")
