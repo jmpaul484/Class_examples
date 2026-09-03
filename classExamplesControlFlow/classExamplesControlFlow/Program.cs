@@ -9,7 +9,15 @@ namespace classExamplesControlFlow
         static void Main(string[] args)
         {
             int firstNumber = 7;
-            Console.WriteLine(firstNumber > 1);
+            if (firstNumber < 1)
+            {
+                Console.WriteLine("bigger then 1!");
+            }
+            else
+            {
+                Console.WriteLine("not bigger then 1!");
+            }
+
             //Pause
             Console.ReadLine();
         }
