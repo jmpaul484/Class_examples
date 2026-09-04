@@ -37,6 +37,30 @@
             //Console.WriteLine("have a nice day");
             //Pause
 
+            string userInput = "";
+            int firstNumber = 0;
+            bool isValid = false;
+
+            do
+
+            {
+                Console.WriteLine("Please enter a whole number:");
+                userInput = Console.ReadLine();
+                Console.WriteLine($"You entered: {userInput}");
+
+                try
+                {
+                    firstNumber = int.Parse(userInput);
+                    isValid = true;
+                    Console.WriteLine("Successfully converted to an integer");
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Error: Please enter a valid whole number.");
+                    isValid = false;
+                }
+            } while (!isValid);
             Console.ReadLine();
         }
     }
