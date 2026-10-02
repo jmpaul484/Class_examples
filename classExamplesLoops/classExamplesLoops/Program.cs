@@ -41,26 +41,32 @@
             int firstNumber = 0;
             bool isValid = false;
 
-            do
+            //do
 
+            //{
+            //    Console.WriteLine("Please enter a whole number:");
+            //    userInput = Console.ReadLine();
+            //    Console.WriteLine($"You entered: {userInput}");
+
+            //    try
+            //    {
+            //        firstNumber = int.Parse(userInput);
+            //        isValid = true;
+            //        Console.WriteLine("Successfully converted to an integer");
+
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Console.WriteLine("Error: Please enter a valid whole number.");
+            //        isValid = false;
+            //    }
+            //} while (!isValid);
+
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Please enter a whole number:");
-                userInput = Console.ReadLine();
-                Console.WriteLine($"You entered: {userInput}");
-
-                try
-                {
-                    firstNumber = int.Parse(userInput);
-                    isValid = true;
-                    Console.WriteLine("Successfully converted to an integer");
-
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Error: Please enter a valid whole number.");
-                    isValid = false;
-                }
-            } while (!isValid);
+                Console.WriteLine("hello");
+            }
+            Console.WriteLine("Have a nice day");
             Console.ReadLine();
         }
     }

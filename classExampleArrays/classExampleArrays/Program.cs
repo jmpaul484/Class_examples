@@ -7,7 +7,11 @@ namespace classExampleArrays
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int[] measuments = { 47, 37, 63 };
+
+            Console.WriteLine(measuments[2]);
+            //pause
+            Console.ReadLine();
         }
     }
 }
