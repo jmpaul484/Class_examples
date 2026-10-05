@@ -31,6 +31,8 @@
             ExitButton = new Button();
             Submit = new Button();
             Clear = new Button();
+            InfoLable = new Label();
+            InfoTextBox = new TextBox();
             SuspendLayout();
             // 
             // ExitButton
@@ -63,17 +65,38 @@
             Clear.UseVisualStyleBackColor = true;
             Clear.Click += Clear_Click;
             // 
+            // InfoLable
+            // 
+            InfoLable.AutoSize = true;
+            InfoLable.Location = new Point(12, 19);
+            InfoLable.Name = "InfoLable";
+            InfoLable.Size = new Size(44, 25);
+            InfoLable.TabIndex = 3;
+            InfoLable.Text = "Info";
+            // 
+            // InfoTextBox
+            // 
+            InfoTextBox.Location = new Point(77, 13);
+            InfoTextBox.Name = "InfoTextBox";
+            InfoTextBox.Size = new Size(150, 31);
+            InfoTextBox.TabIndex = 4;
+            InfoTextBox.TextChanged += InfoTextBox_TextChanged;
+            // 
             // WinFormExampleForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(InfoTextBox);
+            Controls.Add(InfoLable);
             Controls.Add(Clear);
             Controls.Add(Submit);
             Controls.Add(ExitButton);
             Name = "WinFormExampleForm";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "WinForm Example Form";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -81,5 +104,7 @@
         private Button ExitButton;
         private Button Submit;
         private Button Clear;
+        private Label InfoLable;
+        private TextBox InfoTextBox;
     }
 }

@@ -14,10 +14,16 @@ namespace WinFormExample
 
         private void Submit_Click(object sender, EventArgs e)
         {
-
+            this.Text = InfoTextBox.Text;
         }
 
         private void Clear_Click(object sender, EventArgs e)
+        {
+            InfoTextBox.Clear();
+            
+        }
+
+        private void InfoTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
