@@ -11,5 +11,15 @@ namespace WinFormExample
         {
 
         }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
